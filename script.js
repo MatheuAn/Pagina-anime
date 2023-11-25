@@ -1,25 +1,19 @@
-// Extraindo os dados do script "dados"
-var dadosScript = document.getElementById('dados');
-var dados = JSON.parse(dadosScript.textContent);
+    // Função para carregar conteúdo de index.html no elemento com ID "elementsId"
+    function carregarConteudo() {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          // Atualizando dados no array
+          document.getElementById("elementsId").innerHTML = this.responseText;
 
-// Criando o array de respostas usando as variáveis dinâmicas
-var respostas = [
-    { nome: dados.name, idade: 25 },
-    { nome: dados.name2, idade: 30 },
-    { nome: dados.name3, idade: 22 }
-];
+          // Atualizando os dados diretamente no DOM
+          document.getElementById("titulo").innerText = dados.texto2;
+          document.getElementById("paragrafo").innerText = dados.texto1;
+        }
+      };
+      xhr.open("GET", "index.html", true);
+      xhr.send();
+    }
 
-// Função para exibir os dados na página
-function exibirPessoas() {
-    var pessoasList = document.getElementById('pessoasList');
-    pessoasList.innerHTML = '';
-
-    respostas.forEach(function(pessoa) {
-        var listItem = document.createElement('li');
-        listItem.textContent = `Nome: ${pessoa.nome}, Idade: ${pessoa.idade}`;
-        pessoasList.appendChild(listItem);
-    });
-}
-
-// Chamando a função para exibir os dados iniciais
-exibirPessoas();
+    // Chama a função ao carregar a página
+    window.onload = carregarConteudo;
