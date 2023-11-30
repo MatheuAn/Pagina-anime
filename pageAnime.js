@@ -1,16 +1,4 @@
 
-
-     var titlepostElement = document.querySelector('.titlepostagem');
-     var tititpmElement = document.getElementById('tititpm');
-     if (titlepostElement && tititpmElement) { 
-       tititpmElement.textContent = 
-titlepostElement.textContent;}
-const htmlContent = document.documentElement.innerHTML
-	.replace(/{{(.*?)}}/g, (match, p1) => item[p1.trim()]);
-
-document.documentElement.innerHTML = htmlContent;
-    
-
 var h2Element = document.querySelector('h2[data-ano]');
 	
 	if (h2Element) {
