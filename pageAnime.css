@@ -1,8 +1,12 @@
-body{
-		margin:0px;
-		background:#000018;
-		color:white;
-	}
+:root{
+	--destaque: var(--linkB);
+	--fontewhite: var(--fonteC);
+	--fontebla: var(--contentB);
+	--fontesec: var(--fonteCa);
+	--corfundo: var(--contentB)
+	
+}
+
 	body.hidden{
 		overflow:hidden!important;
 	}
@@ -30,7 +34,7 @@ body{
 			left:0;
 			width:100%;
 			height:80%;
-			background:linear-gradient(to bottom, transparent, #000018);
+			background:linear-gradient(to bottom, transparent, var(--corfundo));
 			
 		}
 		.perfilan{
@@ -40,7 +44,7 @@ body{
 			position:relative;
 		}
 		.perfilan h8{
-			color:white;
+			color:var(--fontewhite);
 			font-size:16px;
 			opacity:0.8;
 			margin:0;
@@ -67,8 +71,8 @@ body{
 			font-weight:300;
 		}
 		.perfilan div h3:nth-child(1){
-			background:orange;
-			color:#000018;
+			background:var(--destaque);
+			color:var(--corfundo);
 			font-weight:500;
 		}
 		.perfilan div h3:nth-child(n+4){
@@ -80,8 +84,8 @@ body{
 			gap:10px
 		}
 		.perfilan group h2{
-			border:2px solid orange;
-			color:white;
+			border:2px solid var(--destaque);
+			color:var(--fontewhite);
 			padding:10px 15px 20px 15px;
 			position:relative;
 			display:flex;
@@ -93,8 +97,8 @@ body{
 			content:"";
 			position:absolute;
 			top:-8px;
-			background:orange;
-			color:black;
+			background:var(--destaque);
+			color:var(--fontebla);
 			font-size:10px;
 			padding:2px 10px;
 			border-radius:100px;
@@ -160,7 +164,7 @@ body{
 	.perfilan group div h8::before{
 			content:"";
 			margin-right:5px;
-			color:white;
+			color:var(--fontewhite);
 			font-weight:500;
 		}
 	.perfilan group div h8:nth-child(1)::before{
@@ -173,7 +177,7 @@ body{
 	#sinopsepa{
 		font-style:italic;
 		opacity:0.8;
-		color:#ddd;
+		color:var(--fontesec);
 		
 	}
 	#detalspa div h8::after,
@@ -184,7 +188,7 @@ body{
 		font-family: material icons outlined;
 		display:inline-flex;
 		transform: rotate(180deg);
-		color:orange;
+		color:var(--destaque);
 	}
 		#detalspa div h8::after,
 		#sinopsepa::after{
@@ -203,7 +207,7 @@ body{
 		border-radius:50%;
 		width:50px;
 		height:50px;
-		border:2px solid white;
+		border:2px solid var(--fontewhite);
 		display:flex;
 		align-items:center;
 		justify-content:center;
@@ -254,14 +258,14 @@ body{
 		left:0;
 		width:100%;
 		height:100%;
-		background:#000018;
+		background:var(--corfundo);
 		opacity:0.7;
 	}
 	#detalspa div:nth-child(1){
 		width:80%;
 		height:70%;
 		padding:10px;
-		border:2px solid orange;
+		border:2px solid var(--destaque);
 		border-radius:10px;
 		overflow:hidden;
 		z-index:2;
@@ -276,7 +280,7 @@ body{
 			left: 0;
 			height: 200%;
 			width: 100%;
-			background: linear-gradient(to bottom, transparent, #000018);
+			background: linear-gradient(to bottom, transparent, var(--corfundo));
 			z-index:-1;
 		}
 
@@ -353,8 +357,8 @@ body{
 			font-weight:900;
 		}
 		.classespa h3:nth-child(1){
-			background:orange;
-			color:black;
+			background:var(--destaque);
+			color:var(--fontebla);
 		}
 		#titlepa{
 			margin:0;
@@ -382,7 +386,7 @@ body{
     opacity: 0!important;
     transition: opacity 0.3s ease;
     z-index: 2;
-    -webkit-mask: linear-gradient(to top, transparent, #000018 50%);
+    -webkit-mask: linear-gradient(to top, transparent, var(--corfundo) 50%);
 }
 
 		#opanime:hover {
@@ -505,8 +509,8 @@ body{
 		border-radius:0!important;
 		border:none!important;
 		padding:5px 10px;
-		background: Orange;
-		color:black;
+		background: var(--destaque);
+		color:var(--fontebla);
 		transition: padding 0.3s ease;
 	}
 	#playpa:hover{
