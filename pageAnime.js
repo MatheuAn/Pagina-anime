@@ -67,23 +67,23 @@ var h2Element = document.querySelector('h2[data-ano]');
 	
 	  document.querySelector("#playpa").addEventListener("click", function() {
     var detalspa = document.querySelector("#detalspa");
-    var body = document.querySelector("body");
+    var htmlS = document.querySelector("#htmlS");
 
     detalspa.classList.add("play");
 
     if (detalspa.classList.contains("play")) {
-        body.classList.add("block");
+        htmlS.classList.add("block");
     } else {
-        body.classList.remove("block");
+        htmlS.classList.remove("block");
     }
 });
 
 function closedatals() {
     var detalspa = document.querySelector("#detalspa");
-    var body = document.querySelector("body");
+    var htmlS = document.querySelector("#htmlS");
 
     detalspa.classList.remove("play");
-    body.classList.remove("block");
+    htmlS.classList.remove("block");
 }
 
 const fundopaElement = document.querySelector('.fundopa');
