@@ -72,9 +72,9 @@ var h2Element = document.querySelector('h2[data-ano]');
     detalspa.classList.add("play");
 
     if (detalspa.classList.contains("play")) {
-        body.classList.add("hidden");
+        body.classList.add("block");
     } else {
-        body.classList.remove("hidden");
+        body.classList.remove("block");
     }
 });
 
@@ -83,7 +83,7 @@ function closedatals() {
     var body = document.querySelector("body");
 
     detalspa.classList.remove("play");
-    body.classList.remove("hidden");
+    body.classList.remove("block");
 }
 
 const fundopaElement = document.querySelector('.fundopa');
