@@ -176,9 +176,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// title Postagem
-    document.addEventListener('DOMContentLoaded', function () {
-            var titlePost = document.querySelector('.titlePost');
+    
+    //Title Postagem
+   document.addEventListener('DOMContentLoaded', function () {
+            var titlePost = document.querySelector('.titlePostagem');
             var tititpm = document.getElementById('tititpm');
 
             if (titlePost && tititpm) {
