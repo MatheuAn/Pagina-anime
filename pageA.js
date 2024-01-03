@@ -175,3 +175,13 @@ document.addEventListener('DOMContentLoaded', function() {
     fundoPa.style.backgroundImage = 'url(' + capaImg.src + ')';
   }
 });
+
+// title Postagem
+    document.addEventListener('DOMContentLoaded', function () {
+            var titlePost = document.querySelector('.titlePost');
+            var tititpm = document.getElementById('tititpm');
+
+            if (titlePost && tititpm) {
+                tititpm.textContent = titlePost.textContent;
+            }
+        });
