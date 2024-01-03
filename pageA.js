@@ -163,3 +163,15 @@ document.addEventListener("DOMContentLoaded", function() {
     nextTButton.classList.add("none");
   }
 });
+
+// imagem padrao
+document.addEventListener('DOMContentLoaded', function() {
+  var fundoPa = document.getElementById('fundopa');
+  var capaImg = document.getElementById('capa').querySelector('img');
+
+  // Verifica se a classe .imgP está presente e a largura da tela é no máximo 700 pixels
+  if (fundoPa.classList.contains('imgP') && window.innerWidth <= 700) {
+    // Atualiza o background-image com o src da imagem
+    fundoPa.style.backgroundImage = 'url(' + capaImg.src + ')';
+  }
+});
